@@ -1,0 +1,30 @@
+.images-list {
+  display: flex;
+  &-item {
+    position: relative;
+    margin-right: 30px;
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+
+  &-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    padding: 27px 0;
+    text-align: center;
+    margin: 0;
+
+    width: 370px;
+    height: 70px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.19;
+    text-transform: uppercase;
+
+    color: var(--primary-white-color);
+    background-color: var(--description-bg-color);
+  }
+}

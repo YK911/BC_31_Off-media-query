@@ -1,0 +1,134 @@
+/* Footer */
+.footer {
+  background-color: var(--secondary-bg-color);
+  padding: 60px 0;
+
+  &-container {
+    display: flex;
+    align-items: baseline;
+  }
+  &-list {
+    margin-bottom: 9px;
+  }
+  &-list:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.footer-contacts {
+  display: block;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+
+  &:hover,
+  &:focus {
+    color: var(--acent-color);
+    fill: var(--acent-color);
+  }
+  &-item {
+    color: var(--primary-white-color);
+  }
+}
+
+.logo-footer {
+  margin-bottom: 20px;
+  display: block;
+
+  &-item {
+    color: var(--primary-white-color);
+  }
+}
+
+.accession {
+  margin-left: 70px;
+
+  &-description {
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    line-height: 1.17;
+  }
+
+  &-list {
+    display: flex;
+  }
+
+  &-link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--accession-bg-color);
+    border-radius: 50%;
+  }
+
+  &-link:hover,
+  &-link:focus {
+    background-color: var(--acent-color);
+  }
+
+  &-list-icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--primary-white-color);
+  }
+
+  &-list-item {
+    margin-right: 10px;
+  }
+  &-list-item:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+
+.footer-forms {
+  margin-left: 93px;
+
+  &-item {
+    display: flex;
+    align-items: center;
+  }
+  &-description {
+    margin-bottom: 20px;
+    color: var(--primary-white-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.17;
+  }
+  &-input {
+    width: 358px;
+    height: 50px;
+    background-color: var(--secondary-bg-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+  }
+  &-button {
+    display: flex;
+    align-items: center;
+    padding: 10px 29px;
+    margin-left: 12px;
+    align-items: center;
+
+    color: var(--btn-white-color);
+    background-color: var(--btn-acent-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  &-svg {
+    margin-left: 10px;
+  }
+}

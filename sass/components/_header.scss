@@ -1,0 +1,112 @@
+.header {
+  background-color: var(--primary-white-color);
+  border-bottom: 1px solid #ececec;
+
+  @include mq(mobile-only) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    color: var(--primary-text-color);
+  }
+}
+
+.nav {
+  display: flex;
+
+  @include mq(mobile-only) {
+    display: none;
+  }
+
+  .nav__list {
+    display: flex;
+    margin-left: 93px;
+  }
+  &__item {
+    margin-right: 50px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    padding: 32px 0;
+
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+  }
+  &__link.current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: var(--acent-color);
+    border-radius: 4px;
+  }
+  &__link:hover,
+  &__link:focus,
+  &__link.current {
+    color: var(--acent-color);
+  }
+}
+
+/* Сontacts */
+.contacts {
+  margin-left: auto;
+
+  @include mq(mobile-only) {
+    display: none;
+  }
+
+  @include mq(desktop) {
+    display: flex;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  &-link {
+    display: flex;
+    align-items: center;
+
+    color: var(--secondary-text-color);
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+
+    @include mq(mixin) {
+      font-size: 14px;
+    }
+  }
+
+  &-link:hover,
+  &-link:focus {
+    color: var(--acent-color);
+    fill: var(--acent-color);
+  }
+
+  &-header-svg {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+}

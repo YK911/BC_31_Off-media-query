@@ -1,0 +1,12 @@
+.logo {
+  color: var(--acent-color);
+  font-family: var(--logo-font);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+
+  &:hover,
+  &:focus {
+    color: var(--acent-color);
+  }
+}
